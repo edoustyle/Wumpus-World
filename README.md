@@ -1,5 +1,4 @@
 # Wumpus-World
-![header](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40cluelessrae%2Fthe-probabilistic-wumpus-world-e1bc4a90377b%3Fsource%3Drss-------1&psig=AOvVaw3TZF7wTfsjBNGUQRSwaGyu&ust=1684710996513000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLjWpNaDhf8CFQAAAAAdAAAAABAE)
 ![1_wSgWu87_-miKnsmhddNUSg](https://github.com/edoustyle/Wumpus-World/assets/134174991/7c567ed6-9518-4de8-abcc-eda031716aa9)
 >Status: Developing ⚠️
 
