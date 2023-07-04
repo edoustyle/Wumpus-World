@@ -3,6 +3,8 @@
 
 >Status: Developed ✅
 ### Versão 1.0
+![Random_walk_in2D_closeup](https://github.com/edoustyle/Wumpus-World/assets/134174991/9cce921e-c517-41c4-a820-0412628e159e)
+
 
     Regras:
 * Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis para maximizar o tempo)
