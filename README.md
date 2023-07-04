@@ -49,3 +49,5 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 ### Assistir o vídeo da versão 2 ➡️ https://github.com/edoustyle/Wumpus-World/issues/2#issue-1788428474
 #
     OBS: O código da versão 2.0 não está perfeito, o nosso agente está mais para 'medroso' do que 'cauteloso' 😅
+### Versão 3.0
+![DNA](https://github.com/edoustyle/Wumpus-World/assets/134174991/df13f383-9799-4793-81b6-7c865350d108)
