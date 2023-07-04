@@ -46,5 +46,7 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 +	Após perceber “brilho” o agente pega o ouro e retorna à sua posição inicial seguindo o caminho de onde ele veio, caminho que é armazenado numa lista. Ao retornar a sua posição original com o ouro, o agente ganha a partida. Usando a função 'voltar' ele percorre o seu trajeto (inverso) que está armazenado na lista da classe Trajeto.
 
 +	O agente só vai atirar após identificar onde está o wumpus.
+
+### Assistir o vídeo da versão 2 ➡️ https://github.com/edoustyle/Wumpus-World/issues/2#issue-1788428474
 #
     OBS: O código da versão 2.0 não está perfeito, o nosso agente está mais para 'medroso' do que 'cauteloso' 😅
