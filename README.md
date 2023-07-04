@@ -53,3 +53,11 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
     OBS: O código da versão 2.0 não está perfeito, o nosso agente está mais para 'medroso' do que 'cauteloso' 😅
 ### Versão 3.0
 ![DNA](https://github.com/edoustyle/Wumpus-World/assets/134174991/df13f383-9799-4793-81b6-7c865350d108)
+
+Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). 
+
+Falta detalhar: 
+- modo de escolha dos pais
+- taxa de mutacao
+- calcul do fitness
+- detalhar as classes
