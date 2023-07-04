@@ -1,7 +1,7 @@
 # Wumpus-World
 ![1_wSgWu87_-miKnsmhddNUSg](https://github.com/edoustyle/Wumpus-World/assets/134174991/36cdf16b-fbcd-4ab7-9b43-958f1d757fdb)
->Status: Developing ⚠️
 
+>Status: Developed ✅
 ### Versão 1.0
 
     Regras:
@@ -20,6 +20,7 @@ nao tem memoria
 * Não tem limite de tempo (por enquanto)
 * O ouro pode cair aleatoriamente onde está o wumpus mas não onde está o agente e onde está um poço (porque senao nao tem graça)
 
+>Status: Developing ⚠️
 ### Versão 2.0
 
 ![360_F_487133202_AoYev86tqkqK6IsRjnuFWWsTbPDJtqJa](https://github.com/edoustyle/Wumpus-World/assets/134174991/b0192a8c-d21b-4ee8-8b17-119df38767f8)
