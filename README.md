@@ -5,15 +5,19 @@
 ### Versão 1.0
 ![Random_walk_in2D_closeup](https://github.com/edoustyle/Wumpus-World/assets/134174991/9cce921e-c517-41c4-a820-0412628e159e)
 
+Esse projeto representa de forma visual como se sai uma inteligencia artificial confrontada à diferentes obstáculos.
+O mundo pode é composto por um agente, e vários obstaculos, nesse caso poço e wumpus(a quantidade de cada um depende do tamanho escolhido pelo usuário para o mundo).
+Nessa primeira versão o nosso agente se move de forma aleatório (respeitando as direções possíveis).
+O objetivo principal é andar pelo mundo a procura do ouro e voltar para a sua posição inicial (vivo).
 
     Regras:
 * Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis para maximizar o tempo)
 * Nao pode haver um obstaculo aos lados adjançante ao canto (ao mesmo tempo) se o agente (caçador) estiver naquele canto (vale pro ouro tbm),
 ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstaculos, mesma coisa pro ouro (no lugar do caçador)
-* Somente 1 tiro (por enquanto) escolha aleatoria, porém quando atirar segue a direcao na qual atirou
+* O agente pode atirar até 1x a quantidade de wumpus no mundo (por enquanto) escolha aleatoria, porém quando atirar segue a direcao na qual atirou
 * Objetivo pegar o ouro e voltar para posicao inicial (vivo)
-matar o wumpus nao é obrigacao (mas pode ser dependendo da situaçao)
-nao tem memoria
+* matar o wumpus nao é obrigacao (mas pode ser dependendo da situaçao)
+* nao tem memoria
 * Cada obstaculos causa uma percepcao às posicoes adjacentes (nao precisa fazer para as que tem poço)
 * O wumpus é fixo, não anda durante o jogo (por enquanto)
 * Os poços são fixos durante o jogo (obvio)
@@ -54,7 +58,7 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 ### Versão 3.0
 ![DNA](https://github.com/edoustyle/Wumpus-World/assets/134174991/df13f383-9799-4793-81b6-7c865350d108)
 
-Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). 
+Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). O objetivo ainda é caminhar no mundo de wumpus para achar o ouro e voltar para a posicão inical (vivo).
 
 Falta detalhar: 
 - modo de escolha dos pais
