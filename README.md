@@ -19,6 +19,7 @@ nao tem memoria
 * O agente só possui uma vida (por enquanto)
 * Não tem limite de tempo (por enquanto)
 * O ouro pode cair aleatoriamente onde está o wumpus mas não onde está o agente e onde está um poço (porque senao nao tem graça)
+![Versão 1](https://github.com/edoustyle/Wumpus-World/assets/134174991/e7a75167-d561-492e-aa48-3c57ba4a36c9)
 
 >Status: Developing ⚠️
 ### Versão 2.0
