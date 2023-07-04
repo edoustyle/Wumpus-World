@@ -38,10 +38,12 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 
 +	Em cada posição marcada como safe no mapa do nosso agente ele sabe que já andou por lá e pode andar com segurança “na teoria”.
 
++	Cada passo é registrado usando com o auxilio da classe 'Coordenadas', caminho percorrido é salvo numa lista (class Trajeto).
+
 +	Toda casa onde não tem percepções é marcada como safe no mapa do agente.
 
-+	Após perceber “brilho” o agente pega o ouro e retorna à sua posição inicial seguindo o caminho de onde ele veio, caminho que é armazenado numa lista. Ao retornar a sua posição original com o ouro, o agente ganha a partida.
++	Após perceber “brilho” o agente pega o ouro e retorna à sua posição inicial seguindo o caminho de onde ele veio, caminho que é armazenado numa lista. Ao retornar a sua posição original com o ouro, o agente ganha a partida. Usando a função 'voltar' ele percorre o seu trajeto (inverso) que está armazenado na lista da classe Trajeto.
 
 +	O agente só vai atirar após identificar onde está o wumpus.
 #
-    OBS: O código da versão 2.0 não foi postado pelo fato dos desenvolvedores se recusarem em postar algo incompleto 😅
+    OBS: O código da versão 2.0 não está perfeito, o nosso agente está mais para 'medroso' do que 'cauteloso' 😅
