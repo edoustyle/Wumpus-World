@@ -58,10 +58,12 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 ### Versão 3.0
 ![DNA](https://github.com/edoustyle/Wumpus-World/assets/134174991/df13f383-9799-4793-81b6-7c865350d108)
 
-Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). O objetivo ainda é caminhar no mundo de wumpus para achar o ouro e voltar para a posicão inical (vivo).
+Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). O objetivo ainda é caminhar no mundo de wumpus para achar o ouro e voltar para a posicão inical (vivo). Na primeira população, todos os genes dos indivíduos são formados de maneira aleatória, o tamanho desses genes é definido de acordo com o tamanho do mundo. Da segunda geração em diante o gene dos indivíduos serão escolhidos a partir de um cruzamento e de uma mutação originada de seus “pais”.
 
-Falta detalhar: 
-- modo de escolha dos pais
+    Detalhando: 
+- Escolha dos pais
+  Há diferentes formas de escolher os dois indivíduos “pais” de um indivíduo num algoritmo genético, tais como a seleção de torneio, de roleta ou de rank. Nessa versão foi escolhida a seleção por roleta, também conhecida como seleção proporcional, é um método utilizado em algoritmos genéticos para selecionar indivíduos para reprodução com base em sua aptidão (fitness). O processo é chamado de "roleta" porque se assemelha ao girar uma roleta de cassino, onde os indivíduos com maior fitness têm uma maior probabilidade de serem selecionados. Em seguida é feito um cruzamento entre os dois “pais” para gerar um indivíduo “filho”. Após isso o filho é inserido na nova população, isso é feito várias vezes até preencher o tamanho da população.
+
 - taxa de mutacao
 - calcul do fitness
 - detalhar as classes
