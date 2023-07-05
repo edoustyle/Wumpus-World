@@ -61,9 +61,55 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). O objetivo ainda é caminhar no mundo de wumpus para achar o ouro e voltar para a posicão inical (vivo). Na primeira população, todos os genes dos indivíduos são formados de maneira aleatória, o tamanho desses genes é definido de acordo com o tamanho do mundo. Da segunda geração em diante o gene dos indivíduos serão escolhidos a partir de um cruzamento e de uma mutação originada de seus “pais”.
 
     Detalhando: 
-- Escolha dos pais
-  Há diferentes formas de escolher os dois indivíduos “pais” de um indivíduo num algoritmo genético, tais como a seleção de torneio, de roleta ou de rank. Nessa versão foi escolhida a seleção por roleta, também conhecida como seleção proporcional, é um método utilizado em algoritmos genéticos para selecionar indivíduos para reprodução com base em sua aptidão (fitness). O processo é chamado de "roleta" porque se assemelha ao girar uma roleta de cassino, onde os indivíduos com maior fitness têm uma maior probabilidade de serem selecionados. Em seguida é feito um cruzamento entre os dois “pais” para gerar um indivíduo “filho”. Após isso o filho é inserido na nova população, isso é feito várias vezes até preencher o tamanho da população.
+### Escolha dos pais
+ 
+Há diferentes formas de escolher os dois indivíduos “pais” de um indivíduo num algoritmo genético, tais como a seleção de torneio, de roleta ou de rank. Nessa versão foi escolhida a seleção por roleta, também conhecida como seleção proporcional, é um método utilizado em algoritmos genéticos para selecionar indivíduos para reprodução com base em sua aptidão (fitness). O processo é chamado de "roleta" porque se assemelha ao girar uma roleta de cassino, onde os indivíduos com maior fitness têm uma maior probabilidade de serem selecionados. Em seguida é feito um cruzamento entre os dois “pais” para gerar um indivíduo “filho”. Após isso o filho é inserido na nova população, isso é feito várias vezes até preencher o tamanho da população.
 
-- taxa de mutacao
-- calcul do fitness
-- detalhar as classes
+### Cruzamento
+
+    Para cada gene do indivíduo:
++ Gera um número aleatório entre 0 e 1
++ Compara esse número com uma taxa de mutação pré-definida
++ Se o número aleatório for menor ou igual à taxa de mutação, ocorre a mutação desse gene
++ Seleciona aleatoriamente um novo valor para o gene a partir de um conjunto predefinido de valores possíveis
++ Atualiza o gene do indivíduo com o novo valor
++ Repete o processo descrito acima para cada gene do indivíduo
+
+### Taxa de mutação
+
+A mutação é um operador genético que introduz aleatoriamente uma pequena alteração no material genético de um indivíduo, ajudando a manter a diversidade genética na população e permitindo a exploração de novas soluções. Um indivíduo é representado por um cromossomo, que é composto por genes. Cada gene representa uma característica ou variável do problema em questão. Nesse código a mutação altera aleatoriamente um gene do cromossomo de um indivíduo. A taxa de mutação é definida como um valor entre 0 e 1, representando a probabilidade de mutação para cada gene. Um valor baixo de taxa de mutação indica uma baixa probabilidade de mutação, enquanto um valor alto indica uma alta probabilidade. No nosso caso escolhemos 0.5 como taxa de mutação.
+
+### Calcul Do Fitness
+
+O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial para saber se nosso indivíduo está involuindo (de acordo com o que queremos). Decidimos colocar esse sistema de pontuação para gerar o fitness:
+* +20pts para mudar de posição e continuar vivo
+* -10pts se bater na parede
+* +2000pts quando pega o ouro (pela primeira vez)
+* -10pts se voltar para a casa do ouro (no caso já pegou ele)
+* -10pts toda vez que volta para uma casa já visitada (a não ser que tenha pegado o ouro)*
+* -500pts se cair no poço
+* +1500 se matar o Wumpus
+
+### Detalhamento das Classes
+
+    VERSAO 3
+  
++ Classe população - representa população com o seu conjunto de indivíduos que são armazenados dentro de um vetor, onde a métodos para acessar e manipular esses indivíduos  
+
++ Classe indivíduo - representa as características do indivíduo que são: os seus genes (armazenados dentro de um vetor) e o seu fitness, também tem métodos para manipular essas variáveis  
+
++ ListaPopulacao - é um arraylist onde é armazenado os indivíduos de uma população
+
++ Versao3 - Main principal (onde roda o jogo)
+
++ AG_MW - Onde é criada a nova população e onde é feito o cruzamento e mutação da mesma.
+
+#
+    VERSAO 2
+
++ Coordenadas - é classe que representando uma posição do mundo (linha e coluna basicamente)
++ Trajeto - Lista armazenando o caminho percorrido pelo agente
+
+#
+    COMUM A TODAS 
+Posicao - representando as características de uma posição no mundo
