@@ -112,4 +112,4 @@ O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial
 
 #
     COMUM A TODAS 
-Posicao - representando as características de uma posição no mundo
+* Posicao - representando as características de uma posição no mundo
