@@ -79,7 +79,7 @@ Há diferentes formas de escolher os dois indivíduos “pais” de um indivídu
 
 A mutação é um operador genético que introduz aleatoriamente uma pequena alteração no material genético de um indivíduo, ajudando a manter a diversidade genética na população e permitindo a exploração de novas soluções. Um indivíduo é representado por um cromossomo, que é composto por genes. Cada gene representa uma característica ou variável do problema em questão. Nesse código a mutação altera aleatoriamente um gene do cromossomo de um indivíduo. A taxa de mutação é definida como um valor entre 0 e 1, representando a probabilidade de mutação para cada gene. Um valor baixo de taxa de mutação indica uma baixa probabilidade de mutação, enquanto um valor alto indica uma alta probabilidade. No nosso caso escolhemos 0.5 como taxa de mutação.
 
-### Calcul Do Fitness
+### Calcule Do Fitness
 
 O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial para saber se nosso indivíduo está involuindo (de acordo com o que queremos). Decidimos colocar esse sistema de pontuação para gerar o fitness:
 * +20pts para mudar de posição e continuar vivo
