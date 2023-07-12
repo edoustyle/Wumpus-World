@@ -9,6 +9,14 @@ Esse projeto representa de forma visual como se sai uma inteligencia artificial 
 O mundo pode é composto por um agente, e vários obstaculos, nesse caso poço e wumpus(a quantidade de cada um depende do tamanho escolhido pelo usuário para o mundo).
 Nessa primeira versão o nosso agente se move de forma aleatório (respeitando as direções possíveis).
 O objetivo principal é andar pelo mundo a procura do ouro e voltar para a sua posição inicial (vivo).
+### Etapa 1
+>Construção do Ambiente e das Percepções
+
+O nosso mundo é representado por uma matriz quadrada, escolhemos o tamanho dela. De acordo com o tamanho escolhido a quantidade de poços e wumpus também é escolhida com os seguintes calculos: 
+* quantidadePocos = (int)((tamanho*tamanho)*0.2); --> 20% da quantidade de "casas" totais
+* quantidadeWumpos = (int)(((int)((tamanho*tamanho)*0.2))*0.4); --> 40% da quantidade de poços
+
+Criamos uma class chamada Posicao que recebe o tipo, o sentido e o ambiente da "casinha" do mundo, quando o ouro, o poço, o wumpus são criados, passamos o tipo e o ambiente. Decidimos criar outra função separada para passar posteriormente as percepções (que chamamos aqui de sentido), pois ela são passadas para as casas adjacentes aos obstáculos.
 
     Regras:
 * Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis para maximizar o tempo)
@@ -18,12 +26,12 @@ ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstac
 * Objetivo pegar o ouro e voltar para posicao inicial (vivo)
 * matar o wumpus nao é obrigacao (mas pode ser dependendo da situaçao)
 * nao tem memoria
-* Cada obstaculos causa uma percepcao às posicoes adjacentes (nao precisa fazer para as que tem poço)
-* O wumpus é fixo, não anda durante o jogo (por enquanto)
+* Cada obstaculos causa uma percepcao às posicoes adjacentes
+* O wumpus é fixo, não anda durante o jogo
 * Os poços são fixos durante o jogo (obvio)
 * Os obstaculos e a posicao do agente sao decididos aleatoriamente
-* O agente só possui uma vida (por enquanto)
-* Não tem limite de tempo (por enquanto)
+* O agente só possui uma vida 
+* Não tem limite de tempo 
 * O ouro pode cair aleatoriamente onde está o wumpus mas não onde está o agente e onde está um poço (porque senao nao tem graça)
 ### Assistir o video da versão 1 ➡️ https://github.com/edoustyle/Wumpus-World/issues/1#issue-1788416656
 >Status: Developing ⚠️
@@ -92,7 +100,7 @@ O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial
 
 ### Detalhamento das Classes
 
-    VERSAO 3
+>VERSAO 3
   
 + Classe população - representa população com o seu conjunto de indivíduos que são armazenados dentro de um vetor, onde a métodos para acessar e manipular esses indivíduos  
 
@@ -104,12 +112,10 @@ O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial
 
 + AG_MW - Onde é criada a nova população e onde é feito o cruzamento e mutação da mesma.
 
-#
-    VERSAO 2
+>VERSAO 2
 
 + Coordenadas - é classe que representando uma posição do mundo (linha e coluna basicamente)
 + Trajeto - Lista armazenando o caminho percorrido pelo agente
 
-#
-    COMUM A TODAS 
+>COMUM A TODAS 
 * Posicao - representando as características de uma posição no mundo
