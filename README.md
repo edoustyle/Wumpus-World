@@ -1,8 +1,9 @@
 # Wumpus-World
 ![1_wSgWu87_-miKnsmhddNUSg](https://github.com/edoustyle/Wumpus-World/assets/134174991/36cdf16b-fbcd-4ab7-9b43-958f1d757fdb)
 
->Status: Developed ✅
 ### Versão 1.0
+>Status: Developed ✅
+
 ![Random_walk_in2D_closeup](https://github.com/edoustyle/Wumpus-World/assets/134174991/9cce921e-c517-41c4-a820-0412628e159e)
 
 Esse projeto representa de forma visual como se sai uma inteligencia artificial confrontada à diferentes obstáculos.
@@ -27,11 +28,12 @@ Não preder o ouro no canto com 2 poços.
 Se o ouro cair num canto não terá nenhum poço nas casas adjacentes.
 ### Etapa 2
 Nessa etapa implementamos a movimentação do nosso agente de acordo com um conjunto de regras.
+
     Regras:
 * Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis de acordo com sua posicao para maximizar o tempo)
 * Nao pode haver um obstaculo aos lados adjançante ao canto (ao mesmo tempo) se o agente (caçador) estiver naquele canto (vale pro ouro tbm),
 ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstaculos, mesma coisa pro ouro (no lugar do caçador)
-* O agente pode atirar até 1x a quantidade de wumpus no mundo (por enquanto) escolha aleatoria, porém quando atirar segue a direcao na qual atirou
+* O agente pode atirar até 1x a quantidade de wumpus no mundo (por enquanto) escolha aleatoria, porém quando atirar segue a direcao na qual atirou (se ele sentir fedor é claro)
 * Objetivo pegar o ouro e voltar para posicao inicial (vivo)
 * matar o wumpus nao é obrigacao (mas pode ser dependendo da situaçao)
 * nao tem memoria
@@ -42,9 +44,17 @@ ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstac
 * O agente só possui uma vida 
 * Não tem limite de tempo 
 * O ouro pode cair aleatoriamente onde está o wumpus mas não onde está o agente e onde está um poço (porque senao nao tem graça)
+
+>Dificulades:
+
+'Resetar' os sentidos quando o wumpus morre, sem ter que recriar o ambiente.
+
+>Solução: Decidimos deixar assim mesmo, tem como resolver teria deixado o código muito grande e isso de fato é um incomodo quando se executa o código só uma vez em 1% das vezes.
+
 ### Assistir o video da versão 1 ➡️ https://github.com/edoustyle/Wumpus-World/issues/1#issue-1788416656
+
+### Versão 2.0 (Etapa 3)
 >Status: Developing ⚠️
-### Versão 2.0
 
 ![360_F_487133202_AoYev86tqkqK6IsRjnuFWWsTbPDJtqJa](https://github.com/edoustyle/Wumpus-World/assets/134174991/b0192a8c-d21b-4ee8-8b17-119df38767f8)
 
@@ -69,10 +79,18 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 
 +	O agente só vai atirar após identificar onde está o wumpus.
 
+>Dificulades:
+
+Fazer ele andar após identificar os obstáculos.
+
+>Solução: Não encontrada, ele nunca morre mas também só ganha quando a sorte faz com que o ouro estejá num caminho livre.
+
 ### Assistir o vídeo da versão 2 ➡️ https://github.com/edoustyle/Wumpus-World/issues/2#issue-1788428474
 #
     OBS: O código da versão 2.0 não está perfeito, o nosso agente está mais para 'medroso' do que 'cauteloso' 😅
-### Versão 3.0
+### Versão 3.0 (Etapa 4)
+>Status: Developing ⚠️
+
 ![DNA](https://github.com/edoustyle/Wumpus-World/assets/134174991/df13f383-9799-4793-81b6-7c865350d108)
 
 Nessa versão utilizaremos algoritmos genéticos para influenciar o comportamento do nosso agente, serão criados diversas gerações de individuos (representando nosso agente) que sofrerão uma mutação (de uma geração para outra). O objetivo ainda é caminhar no mundo de wumpus para achar o ouro e voltar para a posicão inical (vivo). Na primeira população, todos os genes dos indivíduos são formados de maneira aleatória, o tamanho desses genes é definido de acordo com o tamanho do mundo. Da segunda geração em diante o gene dos indivíduos serão escolhidos a partir de um cruzamento e de uma mutação originada de seus “pais”.
