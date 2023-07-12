@@ -99,7 +99,7 @@ public class Versao1 {
         System.out.println("Quantidade de wumpus: "+quantidadeWumpos);
 
         while(criaW!=quantidadeWumpos){
-            if (x==0 && y==0){
+            if (x==0 && y==0||x==1 && y==0||x==0 && y==1){
                 x=generador.nextInt(tamanho);
                 y=generador.nextInt(tamanho);
             }
