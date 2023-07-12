@@ -18,8 +18,17 @@ O nosso mundo é representado por uma matriz quadrada, escolhemos o tamanho dela
 
 Criamos uma class chamada Posicao que recebe o tipo, o sentido e o ambiente da "casinha" do mundo, quando o ouro, o poço, o wumpus são criados, passamos o tipo e o ambiente. Decidimos criar outra função separada para passar posteriormente as percepções (que chamamos aqui de sentido), pois ela são passadas para as casas adjacentes aos obstáculos.
 
+>Dificuldades:
+
+Não preder o ouro no canto com 2 poços.
+
+>Resolvido:
+
+Se o ouro cair num canto não terá nenhum poço nas casas adjacentes.
+### Etapa 2
+Nessa etapa implementamos a movimentação do nosso agente de acordo com um conjunto de regras.
     Regras:
-* Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis para maximizar o tempo)
+* Escolher aleatoriamente o caminho entre os possiveis (somente entre os possiveis de acordo com sua posicao para maximizar o tempo)
 * Nao pode haver um obstaculo aos lados adjançante ao canto (ao mesmo tempo) se o agente (caçador) estiver naquele canto (vale pro ouro tbm),
 ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstaculos, mesma coisa pro ouro (no lugar do caçador)
 * O agente pode atirar até 1x a quantidade de wumpus no mundo (por enquanto) escolha aleatoria, porém quando atirar segue a direcao na qual atirou
