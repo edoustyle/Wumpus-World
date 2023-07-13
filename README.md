@@ -125,6 +125,12 @@ O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial
 * -500pts se cair no poço
 * +1500 se matar o Wumpus
 
+>Dificuldades:
+
+Salvar o fitness para as outras gerações ele só calculava normalmente a primeira e copiava os dois primeiros sem atualizar o resto.
+>Resolução:
+
+Mudança na class AG_MW, mudança no chamado do metodo 'envolvernovapopulacao', implementação da variavel correta, correções de while.
 ### Detalhamento das Classes
 
 >VERSAO 3
