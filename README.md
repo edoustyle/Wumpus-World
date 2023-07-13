@@ -122,7 +122,7 @@ O fitness representa a aptidão do indivíduo, esse valor é o nosso referencial
 * +2000pts quando pega o ouro (pela primeira vez)
 * -10pts se voltar para a casa do ouro (no caso já pegou ele)
 * -10pts toda vez que volta para uma casa já visitada (a não ser que tenha pegado o ouro)*
-* -500pts se cair no poço
+* -500pts se cair no poço ou se o monstro matar ele
 * +1500 se matar o Wumpus
 
 >Dificuldades:
