@@ -71,7 +71,7 @@ Nessa versão utilizaremos como base a fase anterior, na qual o jogo (mundo de w
 
 +	Em cada posição marcada como safe no mapa do nosso agente ele sabe que já andou por lá e pode andar com segurança “na teoria”.
 
-+	Cada passo é registrado usando com o auxilio da classe 'Coordenadas', caminho percorrido é salvo numa lista (class Trajeto).
++	Cada passo é registrado com o auxilio da classe 'Coordenadas', caminho percorrido é salvo numa lista (class Trajeto).
 
 +	Toda casa onde não tem percepções é marcada como safe no mapa do agente.
 
