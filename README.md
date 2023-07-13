@@ -51,7 +51,7 @@ ex: se caçador[0][0] então posicao[1][0] e posicao[0][1] não podem ter obstac
 
 >Solução: Decidimos deixar assim mesmo, tem como resolver teria deixado o código muito grande e isso de fato é um incomodo quando se executa o código só uma vez em 1% das vezes.
 
-### Assistir o video da versão 1 ➡️ https://github.com/edoustyle/Wumpus-World/issues/1#issue-1788416656
+### Assistir o video da versão 1 ➡️ [https://github.com/edoustyle/Wumpus-World/issues/1#issue-1788416656](https://github.com/edoustyle/Wumpus-World/issues/1#issue-1788416656)
 
 ### Versão 2.0 (Etapa 3)
 >Status: Developing ⚠️
