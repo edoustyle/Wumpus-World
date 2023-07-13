@@ -21,7 +21,7 @@ Criamos uma class chamada Posicao que recebe o tipo, o sentido e o ambiente da "
 
 >Dificuldades:
 
-Não prender o ouro no canto com 2 poços.
+Não prender o ouro ou o agente no canto com 2 poços.
 
 >Resolvido:
 
