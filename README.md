@@ -25,7 +25,7 @@ Não prender o ouro ou o agente no canto com 2 poços.
 
 >Resolvido:
 
-Se o ouro cair num canto não terá nenhum poço nas casas adjacentes.
+Se o ouro cair num canto não terá nenhum poço nas casas adjacentes. (vale pro agente tbm)
 ### Etapa 2
 Nessa etapa implementamos a movimentação do nosso agente de acordo com um conjunto de regras.
 
