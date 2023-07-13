@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Individuo {
     private char[] genes;
-    private int fitness;
+    private int fitness=0;
     private double probabilidadeSelecao;
     public Trajeto trajeto;
     public int indice2;
@@ -12,7 +12,6 @@ public class Individuo {
     public Individuo(int tamanhogene) {
         //tamanhogene=10;
         genes = new char[tamanhogene];
-        fitness = 0;
     }
 
     public double getProbabilidadeSelecao() {
